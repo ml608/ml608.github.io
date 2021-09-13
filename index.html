@@ -1,6 +1,7 @@
 <body>
   <h5>FX Team投入指数(Week)</h5>
-  <font size="1">[2]8,[3]20,[4]46，[5]52，[6]52-5，[7]25，[8]52,[9（210802-0806）holiday]8，[10]30，[11]52,[12]8【13】（0830-...)<p>
+  <font size="1">[2]8,[3]20,[4]46，[5]52，[6]52-5，[7]25，[8]52,[9（210802-0806）holiday]8，
+           [10]30，[11]52,[12]8[13WEEK,8.30]35[14,9.2]35[15,9.6]35[16,9.9]40<p>
   <br>
     
   <h5>资料</h5>
@@ -11,22 +12,18 @@
   <h5>制度</h5>
 （1）每周一、每周四AM8:30开碰头会<br/>
 （2）问题跟踪表<br/>
-（3）report， the last Monday of every month <br/>
+（3）report， the 1ST 星期四 of every month <br/>
   
   <h5>输出</h5>
-（1）[WJG]0705-STM32F407IG引脚分配.zip  MD5 8959 <br/>
-（2）[WYG]引脚分配V2.zip MD5  8d35<br/>
-（3）[WJG]001a_ML_StdCircuit_CAN_Isolate_By_FXteam_WJG_20210729_MD5_63c4.pdf<br/>  
-（4）[WJG]001b_ML_StdCircuit_CAN_noIsolate_By_FXteam_WJG_20210729_MD5_ff28.pdf<br/>  
-（5）[WJG]004a_ML_StdCircuit_DP83848_By_FXteam_WJG_20210729_MD5_e99e.pdf<br/> 
-  （6）[WYG]?.pdf<br/> 
-  （7）[WYG]?.pdf<br/> 
-  （8）[WYG]?.pdf<br/> 
+（1） 管脚分配[初版基本完成]
+（2） 标准电路[初版基本完成]
   
   <h5>SCHEDULING</h5>
  21.06.08 create fuxi  technical group  <br/>
  Meeting room application：[wjg] <br/>
   buy board： [wyg]. from 21.06.10 [OK][lch].from21.0702 to 0715 2board[OK]<br/>
+  采购 MP5507E:[WYG] from21.9.13-？<br/>
+  采购 EMMC & 锂电池等 from 21.09.17-?<br/>
   
   <h5>碰头会纪要</h5>
   <font size="1">[21.06.28]7月1号讨论CPU选型、基本功能、腿分配（会前各自准备），7月5号前确定。<br/>
@@ -45,7 +42,14 @@
  [21.08.12]0hour<br/>
  [21.08.16]FXteam没完成前期任务。report to SY&WZF. 再次分工<br/>
  [21.08.19]针对原理图提出疑问，形成<2021-08-19巨头会.txt>下周一WJG提交WYG提交电源设计，WJG提交其他。
-  <br>
+ [21.08.24 & 27]0hour<br/>
+ [21.08.30]确定9月目标：核心板卡尺寸+核心板原理图工程+核心板卡接插件 +模块壳+接口形式<br/>
+ [21.09.06]9.10wjg提交EMMC电路。 会后LCH确定壳的接口。wjg在9.6下班前提交美光等物料给WYG。
+ [21.09.09]小钢炮目前倾向了电源不隔离。主要考虑空间，但是如果能做到用隔离电源，钢炮体积仍控制得住，最好不过了。
+           大家确定了搞12V掉电检测。电路设计人[WYG]为什么肯定能找到？因为是这个通用的东西。WJG 找资料，提供2个电路。LCH 找资料，提供2个电路。
+    上下拉电阻目前不具备完全确定的条件。有一部分片选和USART用哪个没定下来。
+ [21.09.13]上次会议的任务，WYG部分完成1/3，WJG完成1/2，LCH完成0/2.。汇报;WJG展示他找的电路。WYG展示尚未完成的摆放。本次会议达成共识：采用MP5507E，用5V。未来：（1）看看有没有指令发给SD卡。 （2）除了MP5507E，找其他的方案。
+  下次会前准备：（1）WJG已提供Greenlyan板购买链接。负责买[WYG]。（2）写的过程需要多长时间。多大电流。关需要多久时间[LCH]。（3）摆一摆接口位置[WYG]<br>
   <h5>电路专题分析-问题跟踪表</h5>
   (1)CAN-R69的值[OK]<br/>
   (2)CAN-RX下拉的值[OK]<br/>
